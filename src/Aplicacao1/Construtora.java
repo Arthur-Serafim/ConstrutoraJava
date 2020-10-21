@@ -38,6 +38,7 @@ public class Construtora {
     }
 
     public int getVendas() {
+        this.totalVendas = 0;
         this.corretores.forEach(corretor -> {
             this.totalVendas += corretor.getTotalVendido();
         });

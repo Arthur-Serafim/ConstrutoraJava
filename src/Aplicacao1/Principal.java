@@ -20,16 +20,19 @@ public class Principal {
         int totalVendas = ConstroiSuperRapido.getVendas();
         ArrayList<Corretor> corretores = ConstroiSuperRapido.getCorretor();
 
+        System.out.println("------------------------");
         corretores.forEach(corretor -> {
             System.out.println(corretor.getNome());
             System.out.println(corretor.getMatricula());
             System.out.println(corretor.getMetaMensal());
             System.out.println(corretor.getTotalVendido());
+            System.out.println("------------------------");
         });
 
+        System.out.println("Empresa");
+        System.out.println("Total vendido: " + totalVendas);
+        System.out.println("CNPJ: " + cnpj);
+        System.out.println("CNPJ válido: " + isCnpj);
         System.out.println("------------------------");
-        System.out.println(totalVendas);
-        System.out.println(cnpj);
-        System.out.println(isCnpj);
     }
 }
